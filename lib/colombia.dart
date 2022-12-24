@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noticas_abc/servicios/classtitulares.dart';
+import 'package:trabajoapp/servicios/classtitulares.dart';
 
 
 class Colombia extends StatelessWidget {

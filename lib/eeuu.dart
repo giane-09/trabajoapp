@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noticas_abc/servicios/classnoticias.dart';
+import 'package:trabajoapp/servicios/classnoticias.dart';
 
 
 class ListaNoticias extends StatelessWidget {

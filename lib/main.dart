@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:trabajoapp/homepage.dart';
-import 'package:trabajoapp/login/login.dart';
+import 'package:trabajoapp/firebase/login.dart';
 import 'package:trabajoapp/servicios/noticias.dart';
 /*
 void main() => runApp(AppState());

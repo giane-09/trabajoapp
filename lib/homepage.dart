@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trabajoapp/colombia.dart';
 import 'package:trabajoapp/cuba.dart';
+import 'package:trabajoapp/firebase/chatpage.dart';
 import 'package:trabajoapp/mexico.dart';
 import 'package:trabajoapp/portugal.dart';
 import 'package:trabajoapp/argentina.dart';
@@ -11,7 +12,8 @@ import 'package:trabajoapp/servicios/noticias.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key, required String email});
+   HomePage({super.key, required this.email});
+  String email;
 
   @override
   Widget build(BuildContext context) {
@@ -35,14 +37,30 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Color.fromARGB(210, 255, 255, 255)),
             ),
-            Text(
-              '${DateTime.now().day} - ${DateTime.now().month}-  ${DateTime.now().year}'
-                  .toUpperCase(),
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(210, 242, 237, 237)),
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Bienvenido $email',
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(210, 255, 255, 255)),
+                ),
+                Text(
+                  '${DateTime.now().day} - ${DateTime.now().month}-  ${DateTime.now().year}'
+                      .toUpperCase(),
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(210, 242, 237, 237)),
+                ),
+                IconButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                  PublicarNoticias(email: email)));
+                }, icon: Icon(Icons.chat))
+              ],
+            )
           ],
         ),
       ),
@@ -69,7 +87,7 @@ class HomePage extends StatelessWidget {
                                 decoration: _decoration(),
                                 child: Column(
                                   children: [
-                                    Title(text: 'Noticias Arentina'),
+                                    Title(text: 'Noticias Argentina'),
                                     SingleChildScrollView(
                                       scrollDirection: Axis.horizontal,
                                       child: Container(

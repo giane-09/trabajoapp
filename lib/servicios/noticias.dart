@@ -26,7 +26,7 @@ List<Articles> titularesCO = [];
 List<Articles> titularesCuba = [];
 List<Articles> titularesMexico = [];
  gettitulares()async {
-  var uri = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=754ee82274374e60949a7225d6d34136';
+  var uri = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=d46d0537f0f94458986785be10e72772';
   var url = Uri.parse(uri);
   final response = await http.get(url);
   final decodeData =  AbCnoticias.fromJson(response.body);
@@ -36,7 +36,7 @@ List<Articles> titularesMexico = [];
 
  getNoticas()async {
   String pais='ar';
-  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=754ee82274374e60949a7225d6d34136';
+  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=d46d0537f0f94458986785be10e72772';
   var url = Uri.parse(uri);
   final response = await http.get(url);
   final decodeData =  AbcTitulares.fromJson(response.body);
@@ -47,7 +47,7 @@ List<Articles> titularesMexico = [];
 
  getNoticas2()async {
   String pais='br';
-  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=754ee82274374e60949a7225d6d34136';
+  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=d46d0537f0f94458986785be10e72772';
   var url = Uri.parse(uri);
   final response = await http.get(url);
   final decodeData =  AbcTitulares.fromJson(response.body);
@@ -58,7 +58,7 @@ List<Articles> titularesMexico = [];
 
  getNoticas3()async {
   String pais='co';
-  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=754ee82274374e60949a7225d6d34136';
+  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=d46d0537f0f94458986785be10e72772';
   var url = Uri.parse(uri);
   final response = await http.get(url);
   final decodeData =  AbcTitulares.fromJson(response.body);
@@ -69,7 +69,7 @@ List<Articles> titularesMexico = [];
 
  getNoticas4()async {
   String pais='cu';
-  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=754ee82274374e60949a7225d6d34136';
+  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=d46d0537f0f94458986785be10e72772';
   var url = Uri.parse(uri);
   final response = await http.get(url);
   final decodeData =  AbcTitulares.fromJson(response.body);
@@ -80,7 +80,7 @@ List<Articles> titularesMexico = [];
 
  getNoticas5()async {
   String pais='mx';
-  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=754ee82274374e60949a7225d6d34136';
+  var uri = 'https://newsapi.org/v2/top-headlines?country=$pais&apiKey=d46d0537f0f94458986785be10e72772';
   var url = Uri.parse(uri);
   final response = await http.get(url);
   final decodeData =  AbcTitulares.fromJson(response.body);

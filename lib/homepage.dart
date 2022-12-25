@@ -11,7 +11,7 @@ import 'package:trabajoapp/servicios/noticias.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({super.key, required String email});
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:noticas_abc/colombia.dart';
-import 'package:noticas_abc/cuba.dart';
-import 'package:noticas_abc/mexico.dart';
-import 'package:noticas_abc/portugal.dart';
-import 'package:noticas_abc/argentina.dart';
-import 'package:noticas_abc/eeuu.dart';
-import 'package:noticas_abc/servicios/classnoticias.dart';
-import 'package:noticas_abc/servicios/classtitulares.dart';
-import 'package:noticas_abc/servicios/noticias.dart';
+import 'package:trabajoapp/colombia.dart';
+import 'package:trabajoapp/cuba.dart';
+import 'package:trabajoapp/mexico.dart';
+import 'package:trabajoapp/portugal.dart';
+import 'package:trabajoapp/argentina.dart';
+import 'package:trabajoapp/eeuu.dart';
+import 'package:trabajoapp/servicios/classnoticias.dart';
+import 'package:trabajoapp/servicios/classtitulares.dart';
+import 'package:trabajoapp/servicios/noticias.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {

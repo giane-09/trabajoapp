@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
                                           ],
                                         ),
                                       ),
-                                    ),
+                                    ),/*
                                     Title(
                                       text: 'Noticias EEUU',
                                     ),
@@ -116,7 +116,7 @@ class HomePage extends StatelessWidget {
                                           )
                                         ],
                                       ),
-                                    ),
+                                    ),*/
 
                                     Title(
                                       text: 'Noticias Brasil',
@@ -147,7 +147,7 @@ class HomePage extends StatelessWidget {
                                           )
                                         ],
                                       ),
-                                    ),
+                                    ),/*
                                      Title(
                                       text: 'Noticias Cuba',
                                     ),
@@ -178,7 +178,7 @@ class HomePage extends StatelessWidget {
                                           )
                                         ],
                                       ),
-                                    ),
+                                    ),*/
                                   ],
                                 ),
                               )

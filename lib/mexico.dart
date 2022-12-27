@@ -53,7 +53,9 @@ class Mexico extends StatelessWidget {
                   fontWeight: FontWeight.normal, color: Colors.black54),
               textAlign: TextAlign.justify,
             ),
+            e.urlToImage.isNotEmpty ? 
             Container(
+              width: MediaQuery.of(context).size.width*.5,
                 margin: EdgeInsets.symmetric(vertical: 10),
                 decoration: BoxDecoration(boxShadow: [
                   BoxShadow(
@@ -61,7 +63,8 @@ class Mexico extends StatelessWidget {
                       color: Colors.black54,
                       blurRadius: 7)
                 ]),
-                child: Image.network(e.urlToImage))
+                child:   Image.network(e.urlToImage) ) : 
+                Image.network('https://i.ytimg.com/vi/DC0OL525Y1I/maxresdefault.jpg', width: MediaQuery.of(context).size.width*.4 )
           ],
         ));
   }
